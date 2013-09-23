@@ -1,0 +1,5 @@
+board 800 X 600
+player 800 X 60 
+       in each 80(width) 1 pic
+       r,l,rt,lt,rb,lb,win
+       r- right  l-left   t-top b-bottom
