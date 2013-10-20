@@ -90,7 +90,7 @@ function findxy(cell)
        }
 function meat(dest,turn)
 	{// To find 2 players in same cell
-	if(dest == oPlayer1.cell && dest !=100)// && turn != Player.id%winp.length)
+	if(dest == oPlayer1.cell && dest !=100 && turn != oPlayer1.id%winp.length)
 		{
 		oPlayer1.start = 0;
 		oPlayer1.cell = 0;
@@ -98,7 +98,7 @@ function meat(dest,turn)
 		oPlayer1.y =10*iCellHeight
 		return true;
 		}
-	else if(dest == oPlayer2.cell && dest !=100)// && turn != Player.id%winp.length)
+	else if(dest == oPlayer2.cell && dest !=100 && turn != oPlayer2.id%winp.length)
 		{
 		oPlayer2.start = 0;
 		oPlayer2.cell = 0;
@@ -106,7 +106,7 @@ function meat(dest,turn)
 		oPlayer2.y =10*iCellHeight
 		return true;
 		}
-	else if(dest == oPlayer3.cell && dest !=100)// && turn != Player.id%winp.length)
+	else if(dest == oPlayer3.cell && dest !=100 && turn != oPlayer3.id%winp.length)
 		{
 		oPlayer3.start = 0;
 		oPlayer3.cell = 0;
